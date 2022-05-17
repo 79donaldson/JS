@@ -1,4 +1,4 @@
-const createLink = ({path, name}) => `<a target="_blank", href="${path}">"${name}</a>`
+const createLink = ({path, name}) => `<a target="_blank", href=${path} ">"${name}</a>`
 
 const ul = document.querySelector('ul')
 
