@@ -25,4 +25,4 @@ printPerson(person)
 
 printObject.call(car, 'Car')
 
-printObject.apply(person, ['Person'])
+printObject.apply(car, ['Person'])

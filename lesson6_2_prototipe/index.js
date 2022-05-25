@@ -31,9 +31,7 @@ function hide($el){
 function startGame() {
     score = 0
     setGameTime()
-    $gameTime.setAttribute('disabled', 'true')
-    show($timeHeader)
-    hide($resultHeader)
+    $gameTime.setAttribute('disabled', 'true')    
     isGameStarted = true
     $game.style.backgroundColor = '#fff'
     hide($start)
@@ -72,12 +70,10 @@ function endGame(){
     setGameScore()
     $gameTime.removeAttribute('disabled')
     show($start)   
-    show($start)    
     $game.style.backgroundColor = '#ccc'
     $game.innerHTML = ''
     hide($timeHeader)
     show($resultHeader)
-
 }
 
 // отображение результатов по окончании игры
@@ -126,8 +122,6 @@ function getColor() {
         return Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase()
     //return '#' + ((1<<24)*Math.random()|0).toString(16)
     }
-
-    
 
 
 
